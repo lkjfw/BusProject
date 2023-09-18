@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".UserActivity">
+
+    <LinearLayout
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+<!--      사용자 정보-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="유저"/>
+
+        </LinearLayout>
+<!--      사용자 사진-->
+        <ImageView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/time" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="유저"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:src="@drawable/time" />
+
+    </LinearLayout>
+
+
+<!--    하단바     -->
+    <LinearLayout
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/usertomainbtn"
+            android:text="메인으로"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/usertotimebtn"
+            android:text="시간표"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/usertocheckbtn"
+            android:text="실시간 확인"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/usertonotedbtn"
+            android:text="공지"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/usertouserbtn"
+            android:text="유저"/>
+
+    </LinearLayout>
+
+</LinearLayout>
